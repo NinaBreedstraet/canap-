@@ -320,25 +320,13 @@ a {
   }
 
   .leftPage {
-    visibility: hidden;
-  }
-
-  .rightPage {
-    margin-top: 80%;
+    display: none;
   }
 
   .arrows {
-    visibility: hidden;
+    display: none;
   }
 }
-
-/* .language {
-  font-family: "Averia", serif;
-  font-size: 14px;
-  width: 10vh;
-  margin-top: -2.5vh;
-  margin-left: 1vh;
-} */
 
 .language a {
   display: inline-block;

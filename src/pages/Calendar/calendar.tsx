@@ -41,14 +41,13 @@ export default function Calendar() {
     }));
   };
 
-  //const t = calendarTranslations[language];
-
   return (
     <div className={styles.alles}>
       <div className={styles.boekje}>
         <div className={styles.topper}>
           <p id={styles.left}>
-            <a href="/home">{t("navigation.home")} </a> {">"} {t("navigation.calendar")}
+            <a href="/home">{t("navigation.home")} </a> {">"}{" "}
+            {t("navigation.calendar")}
           </p>
           <p id={styles.right}>4 - {t("navigation.calendar")}</p>
         </div>
@@ -65,7 +64,7 @@ export default function Calendar() {
               headerToolbar={{
                 left: "prev today next",
                 center: "title",
-                right: "dayGridMonth dayGridWeek dayGridDay",
+                right: "",
               }}
               eventClick={(info) =>
                 setModalData({
@@ -84,11 +83,7 @@ export default function Calendar() {
               src="/Images/blinkje8.png"
               alt=""
             />
-            <img
-              className={styles.disco}
-              src="./Images/mannetjes2.png"
-              alt=""
-            />
+            <img className={styles.disco} src="/Images/mannetjes2.png" alt="" />
             <img
               className={styles.blinkje2}
               src="/Images/blinkje1.png"

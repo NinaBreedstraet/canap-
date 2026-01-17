@@ -49,7 +49,7 @@ export default function News() {
                   )
                 }
               >
-                Open in nieuw tabblad
+                {t("news.openInNew")}
               </button>
             </div>
           </div>

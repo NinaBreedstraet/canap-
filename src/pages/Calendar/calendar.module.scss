@@ -1,22 +1,35 @@
 @font-face {
   font-family: "Averia";
-  src: url("../Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+  src: url("/Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
 }
 
 @font-face {
   font-family: "Compagnon";
-  src: url("../Fonts/Compagnon-LightItalic.otf");
+  src: url("/Fonts/Compagnon-LightItalic.otf");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+  src: url("/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
-:root {
-  --fc-button-font-size: 0.25rem;
-  --fc-button-padding: 2px 6px;
-  --fc-headerToolbar: 30%;
+:global(.fc .fc-button) {
+  font-size: 0.7rem !important;
+  padding: 3px 8px !important;
+  background: transparent !important;
+  border: 1px solid black !important;
+  border-radius: 4px !important;
+  font-family: "Roboto" !important;
+  color: black !important;
+}
+
+:global(.fc .fc-button:hover) {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+:global(.fc .fc-toolbar-title) {
+  font-family: "Roboto" !important;
+  font-size: 1rem !important;
 }
 
 html,
@@ -85,6 +98,7 @@ body,
   font-family: "Roboto";
   font-size: 80%;
   margin-top: 2%;
+  margin-left: 2%;
 }
 
 #left {
@@ -295,10 +309,21 @@ a {
 }
 
 @media (max-width: 1000px) {
+  html,
+  body,
+  #root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url("/Images/cursor-default.png"), auto;
+    overflow-y: hidden;
+  }
+
   .alles {
     background-image: url("/Images/paper.png");
     background-size: cover;
-    margin-top: 5%;
   }
 
   .topper {
@@ -306,27 +331,25 @@ a {
   }
 
   .mond {
-    visibility: hidden;
+    display: none;
   }
 
   .pages {
     flex-direction: column;
-    margin-top: 20%;
   }
 
-  .leftPage,
   .rightPage {
-    width: 100%;
+    img {
+      visibility: hidden;
+    }
   }
 
   .leftPage {
-    height: 90%;
+    width: 120%;
+    height: 400%;
   }
 
-  .rightPage {
-    visibility: hidden;
-  }
   .arrows {
-    visibility: hidden;
+    display: none;
   }
 }

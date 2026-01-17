@@ -56,7 +56,7 @@ a {
 
 .boekje {
   width: 59%;
-  height: 25%;
+  height: 90vh;
   rotate: 1deg;
 }
 
@@ -107,23 +107,20 @@ a {
 .header p {
   font-family: "Popstars";
   font-size: 50px;
-  //   margin-top: 2vh;
-  // rotate: 1deg;
   display: flex;
   justify-content: center;
   line-height: normal;
   text-align: center;
-  margin: 10%;
+  margin: 8%;
   color: black;
 }
 
 .content {
   display: flex;
   position: relative;
-  // rotate: 1deg;
   justify-content: space-between;
   width: 100%;
-  height: 20%;
+  height: fit-content;
   margin-left: 0%;
 }
 
@@ -139,14 +136,22 @@ a {
 }
 
 .subtitle {
-  font-family: "PopstarsFill";
-  font-size: 30px;
+  position: initial;
   color: black;
+  display: flex;
+  height: 12%;
+  p {
+    font-family: "PopstarsFill";
+    font-size: 30px;
+  }
 }
 
 .textRight {
   margin-left: 0vh;
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .ster2 {
@@ -197,10 +202,7 @@ a {
 .klikMeer {
   font-family: "Averia";
   font-size: 12px;
-  width: 50vh;
-  position: absolute;
-  margin-top: 2vh;
-  padding-bottom: 5vh;
+  margin-top: 1%;
 }
 
 a {
@@ -269,24 +271,45 @@ a:hover {
     background-image: url("/Images/paper.png");
     background-size: cover;
     margin-top: 0%;
+    overflow-y: scroll;
+  }
+
+  .topper {
+    display: none;
+  }
+
+  .subtitle {
+    font-family: "PopstarsFill";
+    font-size: 30px;
+    line-height: 35px;
+    height: 0%;
+    color: black;
+  }
+
+  html,
+  body,
+  #root {
+    overflow-y: scroll;
+  }
+
+  .ster2 {
+    margin-top: 4%;
   }
 
   .boekje {
-    margin-top: 0%;
     rotate: 0deg;
     overflow-y: scroll;
+    width: 80%;
   }
 
   .content {
     flex-direction: column;
-    margin-top: 0%;
     width: 100%;
-    margin-top: 10%;
   }
 
   .inhoud {
     width: 100%;
-    margin-top: 0%;
+    margin-top: -5%;
   }
 
   .textLeft,
@@ -294,20 +317,12 @@ a:hover {
     width: 100%;
   }
 
-  .textLeft {
-    margin-top: 20%;
-  }
-
   .ster1,
   .blinkje7 {
-    visibility: hidden;
-  }
-
-  .ster2 {
-    margin-top: -20%;
+    display: none;
   }
 
   .arrows {
-    visibility: hidden;
+    display: none;
   }
 }

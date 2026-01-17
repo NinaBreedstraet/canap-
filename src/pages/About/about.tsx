@@ -9,7 +9,9 @@ export default function About() {
       <div className={styles.boekje}>
         <div className={styles.topper}>
           <p id={styles.left}>
-            <a href="/home">{t("navigation.home")} * {t("navigation.about")}</a>
+            <a href="/home">
+              {t("navigation.home")} * {t("navigation.about")}
+            </a>
           </p>
           <p id={styles.right}>1 - {t("navigation.about")}</p>
         </div>
@@ -22,8 +24,7 @@ export default function About() {
             <div className={styles.inhoud}>{t("about.canapeText")}</div>
 
             <div className={styles.subtitle}>
-              <br />
-              {t("about.missie")}
+              <p>{t("about.missie")}</p>
             </div>
 
             <div className={styles.inhoud}>{t("about.missieText")}</div>
@@ -40,24 +41,21 @@ export default function About() {
               src="/Images/sterretjes.png"
               alt="sterretjes"
             />
-            <img
-              className={styles.blinkje7}
-              src="/Images/blinkje7.png"
-              alt="blinkje"
-            />
-            <div className={styles.subtitle}>{t("about.platform")}</div>
+
+            <div className={styles.subtitle}>
+              <p>{t("about.platform")}</p>
+            </div>
 
             <div className={styles.inhoud}>{t("about.platformText")}</div>
 
             <div className={styles.subtitle}>
-              <br />
-              {t("about.conclusie")}
+              <p> {t("about.conclusie")}</p>
             </div>
 
             <div className={styles.inhoud}>{t("about.conclusieText")}</div>
 
             <div className={styles.klikMeer}>
-              <a href="#">{t("about.leesMeer")}</a>
+              <a href="/Images/AboutCanapé.pdf">{t("about.leesMeer")}</a>
             </div>
           </div>
         </div>

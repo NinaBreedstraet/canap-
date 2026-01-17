@@ -10,6 +10,7 @@ const Navigation = () => {
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     localStorage.setItem("language", lang);
+    window.dispatchEvent(new CustomEvent("languageChange", { detail: lang }));
   };
 
   const toggleMenu = () => {

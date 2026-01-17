@@ -314,7 +314,7 @@ a {
   }
 
   .mond {
-    visibility: hidden;
+    display: none;
   }
 
   .pages {
@@ -338,6 +338,23 @@ a {
   }
 
   .arrows {
-    visibility: hidden;
+    display: none;
+  }
+
+  /* Reduce subtitle spacing in Behold widget */
+  [data-behold-id] .behold-post-caption,
+  [data-behold-id] .behold-post-text,
+  [data-behold-id] .behold-caption,
+  [data-behold-id] .behold-subtitle {
+    line-height: 1.1 !important;
+    margin-bottom: 2px !important;
+    margin-top: 2px !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+  }
+
+  [data-behold-id] .behold-post {
+    margin-bottom: 10px !important;
   }
 }
