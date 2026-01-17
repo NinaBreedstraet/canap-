@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "news": "Actualités",
+    "calendar": "Calendrier",
+    "contact": "Contact",
+    "villa": "Villa Canapé",
+    "support": "Soutenir Canapé"
+  },
+  "calendar": {
+    "event": "Événement",
+    "locale": "fr"
+  },
+  "modal": {
+    "date": "Date",
+    "time": "Heure",
+    "location": "Lieu",
+    "description": "Description"
+  },
+  "villa": {
+    "breadcrumb": "Canape > Villa Canapé",
+    "pageNumber": "7 - Villa Canapé",
+    "basement": "Sous-sol",
+    "groundFloor": "Rez-de-chaussée",
+    "firstFloor": "Premier étage",
+    "secondFloor": "Deuxième étage",
+    "clickBasement": "Cliquez pour voir le sous-sol !",
+    "clickGroundFloor": "Cliquez pour voir le rez-de-chaussée !",
+    "clickFirstFloor": "Cliquez pour voir le premier étage !",
+    "clickSecondFloor": "Cliquez pour voir le deuxième étage !",
+    "freeSpaces": "Il reste encore quelques espaces libres ! Vous avez une idée ou besoin d'un espace de travail ? Faites-le nous savoir et envoyez-nous un e-mail "
+  },
+  "ateliers": {
+    "ceramics": "Céramique",
+    "wood": "Bois",
+    "screenPrinting": "Sérigraphie",
+    "kitchen": "Cuisine",
+    "polyvalentSpace": "Espace polyvalent",
+    "extraPolyvalentSpace": "Espace polyvalent supplémentaire",
+    "textile": "Textile",
+    "music": "Musique",
+    "doka": "DoKa",
+    "researchSpace": "Espace de recherche",
+    "viewPhotos": "Voir les photos de l'atelier ici !",
+    "viewSpacePhotos": "Voir les photos de l'espace ici !",
+    "viewRoomPhoto": "Voir une photo de la pièce ici !"
+  },
+  "support": {
+    "breadcrumb": "Canape > Soutenir Canapé",
+    "pageNumber": "8 - Soutenir Canapé",
+    "content": "Canapé vzw fonctionne entièrement sur une base volontaire et ne reçoit aucune subvention structurelle. Par conséquent, tout soutien, sous quelque forme que ce soit, est le bienvenu. Souhaitez-vous faire un don ou contribuer ? N'hésitez pas à nous envoyer un ",
+    "mailLink": "e-mail"
+  },
+  "about": {
+    "overCanape": "À PROPOS DE CANAPE",
+    "canapeText": "Canapé est un collectif d'art communautaire et une ASBL. Avec des membres issus de différents horizons culturels en photographie, sociologie, art textile, design graphique, orfèvrerie et psychologie, nous avons découvert que la scène artistique offre trop peu d'ouverture et d'inclusivité. Les espaces d'art traditionnels se sentent souvent exclusifs, axés sur des groupes spécifiques et des formes d'expression. Nous essayons de briser ces barrières en créant une pratique participative où chacun peut contribuer au monde de l'art.",
+    "missie": "Mission",
+    "missieText": "Notre mission est de promouvoir un environnement accueillant où les gens se sentent soutenus pour découvrir, créer et se connecter à travers l'art. Que vous soyez un artiste établi, un débutant curieux ou que vous appréciiez simplement l'art, chez Canapé il y a toujours une place pour vous.",
+    "platform": "Plateforme",
+    "platformText": "Canapé offre un terrain de jeu ouvert pour les artistes, avec de la place pour l'expression et la création. Nous nous efforçons d'être une plateforme où les artistes peuvent se présenter, partager leurs œuvres et où il y a de la place pour le dialogue et l'essai et erreur. Chez Canapé, nous nous efforçons de créer des liens profonds entre les personnes de tous horizons et niveaux d'expérience. Nous adoptons une approche pair à pair où les artistes entrent en contact avec d'autres artistes, mais aussi les non-artistes avec l'art et les individus expérimentés avec les artistes moins expérimentés.",
+    "conclusie": "Conclusion",
+    "conclusieText": "Concrètement, Canapé offre une plateforme et un espace de travail gratuits et à faible seuil pour les artistes (jeunes) et les collectifs de divers horizons. Cela inclut des espaces d'atelier ouverts et résidentiels, où les artistes peuvent travailler et exposer leurs œuvres ou organiser eux-mêmes des événements et des ateliers.",
+    "leesMeer": "Aimeriez-vous lire plus en détail sur notre fonctionnement? Alors ouvrez le PDF ici!"
+  },
+  "news": {
+    "followUs": "Suivez-nous sur Instagram!",
+    "diveInto": "Plongez dans nos archives photo!"
+  }
+}

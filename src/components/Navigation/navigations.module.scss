@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Averia";
+  src: url("/Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  gap: 4px;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: grey;
+    transition: all 0.3s ease;
+
+    &.open {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
+
+.midden {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  font-family: "Averia", serif;
+  font-size: 12px;
+  gap: 15px;
+  padding: 1%;
+  transition: all 0.3s ease;
+
+  &.mobileMenuOpen {
+    display: flex;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.head {
+  //width: 100%;
+  padding: 0%;
+  font-family: "Averia";
+  color: black;
+}
+
+.img:hover {
+  transform: rotate(90deg);
+}
+
+.languageButtons {
+  display: flex;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.langBtn {
+  background: transparent;
+  border: 1px solid grey;
+  color: grey;
+  padding: 2px 6px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Averia";
+  height: fit-content;
+
+  &:hover {
+    color: black;
+    border-color: black;
+  }
+
+  &.active {
+    color: black;
+    border-color: black;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .midden {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 80px 20px 20px;
+    gap: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+
+    &.mobileMenuOpen {
+      display: flex;
+      right: 0;
+    }
+
+    a {
+      font-size: 16px;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .languageButtons {
+      margin-left: 0;
+      margin-top: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .langBtn {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+}

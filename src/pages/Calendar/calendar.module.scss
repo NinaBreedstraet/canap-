@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Averia";
+  src: url("../Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Compagnon";
+  src: url("../Fonts/Compagnon-LightItalic.otf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+  --fc-button-font-size: 0.25rem;
+  --fc-button-padding: 2px 6px;
+  --fc-headerToolbar: 30%;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url("/Images/cursor-default.png"), auto;
+  overflow-y: hidden;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+.alles {
+  min-height: 90vh;
+  background-image: url("/Images/scansBoekjesWeb_4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.belangrijk {
+  font-family: "Averia";
+  font-size: 10px;
+  position: absolute;
+  margin-left: 1.5vh;
+}
+
+.kalender {
+  width: 100%;
+  height: 70vh;
+  margin-top: 0;
+  padding-top: 0 !important;
+}
+
+.boekje {
+  margin-left: 5%;
+  width: 70%;
+}
+
+.text-row {
+  font-size: 10px;
+  top: 200px;
+  color: black;
+  font-family: "Averia";
+  text-align: left;
+  text-decoration: dotted;
+}
+
+.topper {
+  display: flex;
+  width: 90%;
+  rotate: 1deg;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-size: 80%;
+  margin-top: 2%;
+}
+
+#left {
+  text-align: center;
+  width: 50%;
+}
+
+#left a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-family: "Roboto";
+}
+
+#right {
+  text-align: center;
+  width: 50%;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 80%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.rightPage {
+  width: 45%;
+  height: 90%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightPage .disco {
+  position: relative;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.blinkje9 {
+  position: relative;
+  width: 5%;
+}
+
+.blinkje2 {
+  position: relative;
+  margin-left: 80%;
+  width: 15%;
+}
+
+.leftPage {
+  width: 55%;
+  height: 95%;
+  overflow-y: scroll;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftPage::-webkit-scrollbar {
+  width: 9px;
+}
+
+.leftPage::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 4px;
+}
+
+.leftPage::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.arrows {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 50%;
+  width: 90%;
+  left: 10vh;
+  background: transparent;
+}
+
+.arrowButton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.arrowButton a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  position: relative;
+  color: black;
+}
+
+.arrowButton:hover,
+.text:hover,
+#left a:hover,
+.button button:hover,
+.language a:hover,
+.myAlbum p:hover,
+.Content p:hover {
+  animation-name: buttons;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Event Modal Styles */
+.eventModal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventModalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid black;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  font-family: "Averia";
+}
+
+.eventModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.eventModalHeader h2 {
+  margin: 0;
+  color: black;
+}
+
+.eventModalHeader button {
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.eventModalBody div {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  position: relative;
+  color: black;
+}
+
+.language a {
+  display: inline-block;
+}
+
+@keyframes buttons {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .alles {
+    background-image: url("/Images/paper.png");
+    background-size: cover;
+    margin-top: 5%;
+  }
+
+  .topper {
+    visibility: hidden;
+  }
+
+  .mond {
+    visibility: hidden;
+  }
+
+  .pages {
+    flex-direction: column;
+    margin-top: 20%;
+  }
+
+  .leftPage,
+  .rightPage {
+    width: 100%;
+  }
+
+  .leftPage {
+    height: 90%;
+  }
+
+  .rightPage {
+    visibility: hidden;
+  }
+  .arrows {
+    visibility: hidden;
+  }
+}

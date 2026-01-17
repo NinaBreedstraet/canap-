@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Averia";
+  src: url("../Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LordSwash";
+  src: url("../Fonts/BellMTStd-Italic.otf");
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url("/Images/swirl.png"), auto;
+  overflow-y: hidden;
+}
+
+.alles {
+  min-height: 90vh;
+  background-image: url("/Images/scansBoekjesWeb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.belangrijk {
+  font-family: "Averia";
+  font-size: 10px;
+  position: absolute;
+  margin-left: 1.5vh;
+  bottom: 5%;
+}
+
+.boekje {
+  margin-top: 2%;
+  width: 60%;
+  height: 90%;
+}
+
+.topper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Lordswash";
+  font-size: 100%;
+}
+
+#left {
+  text-align: center;
+  width: 45%;
+}
+
+#left a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-family: "Lordswash";
+}
+
+#right {
+  text-align: center;
+  width: 45%;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+}
+
+.leftPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+.leftPage p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: "LordSwash";
+  font-size: 100%;
+  margin-top: 0;
+}
+
+.knuffel {
+  width: 20%;
+}
+
+.hartje {
+  width: 70px;
+  margin-top: 55vh;
+  margin-left: 42vh;
+  rotate: 40deg;
+}
+
+.buttonLouise {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightPage {
+  display: flex;
+  flex-direction: column;
+  font-family: "LordSwash";
+  font-size: 13px;
+  align-items: left;
+  gap: 5%;
+  width: 40%;
+  height: 100%;
+}
+
+form {
+  width: 90%;
+  height: 100%;
+}
+
+.form {
+  font-family: "LordSwash";
+  font-size: 19px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 7px 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.subjectText {
+  display: block;
+  font-family: "LordSwash";
+  font-size: 18px;
+}
+
+.textdeel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 25%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.textdeel .buttons {
+  text-decoration: underline;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 4%;
+}
+
+.button {
+  margin: 2%;
+  a {
+    font-family: "LordSwash";
+    animation: none;
+  }
+}
+
+.textdeel .buttons button {
+  border: none;
+  background: none;
+  font-family: "LordSwash";
+}
+
+.textdeel #contactcontent {
+  position: relative;
+  margin-top: 0vh;
+  background-color: #eeeeee;
+  border: none;
+  mask: radial-gradient(10px at 20px 20px, transparent 98%, black) -20px -20px;
+  width: 90%;
+  height: 100%;
+  padding: 15px;
+  color: black;
+  resize: none;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.arrows {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 50%;
+  width: 90%;
+  left: 10vh;
+  background: transparent;
+}
+
+.arrowButton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.arrowButton a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  position: relative;
+  color: black;
+}
+
+.button:hover,
+.arrowButton:hover,
+#left a:hover,
+.socials a:hover {
+  animation-name: buttons;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.arrowButton:hover,
+.text:hover,
+#left a:hover,
+.button button:hover,
+.language a:hover,
+.myAlbum p:hover,
+.Content p:hover {
+  animation-name: buttons;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.language a {
+  display: inline-block;
+}
+
+.socials a {
+  margin: 5%;
+}
+
+.socials .instagram {
+  width: 3vh;
+}
+
+.socials .facebook {
+  width: 3vh;
+}
+
+@keyframes buttons {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .alles {
+    background-image: url("/Images/paper.png");
+    background-size: 100%;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url("/Images/swirl.png"), auto;
+    overflow-y: visible;
+  }
+
+  .topper {
+    visibility: hidden;
+  }
+
+  .pages {
+    flex-direction: column-reverse;
+    background-color: red;
+  }
+
+  .leftPage,
+  .rightPage {
+    width: 100%;
+    background-color: green;
+  }
+
+  .leftPage {
+    visibility: hidden;
+  }
+
+  .rightPage {
+    margin-top: 80%;
+  }
+
+  .arrows {
+    visibility: hidden;
+  }
+}

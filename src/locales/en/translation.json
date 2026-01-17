@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About us",
+    "news": "News",
+    "calendar": "Calendar",
+    "contact": "Contact",
+    "villa": "Villa Canapé",
+    "support": "Support Canapé"
+  },
+  "calendar": {
+    "event": "Event",
+    "locale": "en"
+  },
+  "modal": {
+    "date": "Date",
+    "time": "Time",
+    "location": "Location",
+    "description": "Description"
+  },
+  "villa": {
+    "breadcrumb": "Canape > Villa Canapé",
+    "pageNumber": "7 - Villa Canapé",
+    "basement": "Basement",
+    "groundFloor": "Ground Floor",
+    "firstFloor": "First Floor",
+    "secondFloor": "Second Floor",
+    "clickBasement": "Click to see the basement!",
+    "clickGroundFloor": "Click to see the ground floor!",
+    "clickFirstFloor": "Click to see the first floor!",
+    "clickSecondFloor": "Click to see the second floor!",
+    "freeSpaces": "There are still some free spaces! Do you have an idea or need for a workspace? Let us know and send us an email "
+  },
+  "ateliers": {
+    "ceramics": "Ceramics",
+    "wood": "Wood",
+    "screenPrinting": "Screen Printing",
+    "kitchen": "Kitchen",
+    "polyvalentSpace": "Polyvalent Space",
+    "extraPolyvalentSpace": "Extra Polyvalent Space",
+    "textile": "Textile",
+    "music": "Music",
+    "doka": "DoKa",
+    "researchSpace": "Research Space",
+    "viewPhotos": "View photos of the studio here!",
+    "viewSpacePhotos": "View photos of the space here!",
+    "viewRoomPhoto": "View a photo of the room here!"
+  },
+  "support": {
+    "breadcrumb": "Canape > Support Canapé",
+    "pageNumber": "8 - Support Canapé",
+    "content": "Canapé vzw operates entirely on a voluntary basis and receives no structural subsidies. Therefore, all support, in any form, is very welcome. Would you like to donate or contribute? Feel free to send us an ",
+    "mailLink": "email"
+  },
+  "about": {
+    "overCanape": "ABOUT CANAPE",
+    "canapeText": "Canapé is a community-bound art collective and non-profit organization. With members from different cultural backgrounds in photography, sociology, textile art, graphic design, goldsmithing and psychology, we discovered that the art scene offers too little openness and inclusivity. Traditional art spaces often feel exclusive, focused on specific groups and forms of expression. We try to break these barriers by creating a participative practice where everyone can contribute to the art world.",
+    "missie": "Mission",
+    "missieText": "Our mission is to promote a welcoming environment where people feel supported to discover, create and connect through art. Whether you are an established artist, a curious beginner or just appreciate art, at Canapé there is always a place for you.",
+    "platform": "Platform",
+    "platformText": "Canapé offers an open playing field for artists, with room for expression and creation. We strive to be a platform where artists can present themselves, share their works and where there is room for dialogue and trial and error. At Canapé we strive for deep connections between people of all backgrounds and experience levels. We embrace a peer-to-peer approach where artists get in touch with other artists, but also non-artists with art and experienced individuals with less experienced artists. In doing so, we strive to apply a bottom-up and feedback-driven operation, whereby Villa Canapé serves as a common good where everyone gets the chance to help steer the direction the building is going.",
+    "conclusie": "Conclusion",
+    "conclusieText": "Concretely, Canapé offers a free, low-threshold platform and workspace for (young) artists and collectives from diverse backgrounds. This includes open and residential studio spaces, where artists can work and exhibit their work or organize events and workshops themselves.",
+    "leesMeer": "Would you like to read more in detail about our operation? Then open the PDF here!"
+  },
+  "news": {
+    "followUs": "Follow us on Instagram!",
+    "diveInto": "Dive into our photo archive!"
+  }
+}

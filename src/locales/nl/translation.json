@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Over ons",
+    "news": "Nieuws",
+    "calendar": "Kalender",
+    "contact": "Contact",
+    "villa": "Villa Canapé",
+    "support": "Steun Canapé"
+  },
+  "calendar": {
+    "event": "Evenement",
+    "locale": "nl"
+  },
+  "modal": {
+    "date": "Datum",
+    "time": "Tijd",
+    "location": "Locatie",
+    "description": "Beschrijving"
+  },
+  "villa": {
+    "breadcrumb": "Canape > Villa Canapé",
+    "pageNumber": "7 - Villa Canapé",
+    "basement": "Kelder",
+    "groundFloor": "Gelijkvloers",
+    "firstFloor": "Eerste verdieping",
+    "secondFloor": "Tweede verdieping",
+    "clickBasement": "Klik om de kelder te zien!",
+    "clickGroundFloor": "Klik om de gelijksvloers te zien!",
+    "clickFirstFloor": "Klik om de eerste verdieping te zien!",
+    "clickSecondFloor": "klik om de tweede verdieping te zien!",
+    "freeSpaces": "Er zijn nog enkele vrije ruimtes! Heb je een idee of nood aan een werkruimte? Laat van je horen en stuur ons een mailtje "
+  },
+  "ateliers": {
+    "ceramics": "Keramiek",
+    "wood": "Hout",
+    "screenPrinting": "Zeefdruk",
+    "kitchen": "Keuken",
+    "polyvalentSpace": "Polyvalente ruimte",
+    "extraPolyvalentSpace": "Extra polyvalente ruimte",
+    "textile": "Textiel",
+    "music": "Muziek",
+    "doka": "DoKa",
+    "researchSpace": "Research ruimte",
+    "viewPhotos": "Bekijk hier foto's van het atelier!",
+    "viewSpacePhotos": "Bekijk hier foto's van de ruimte!",
+    "viewRoomPhoto": "Bekijk hier een foto van de ruimte!"
+  },
+  "support": {
+    "breadcrumb": "Canape > Steun Canapé",
+    "pageNumber": "8 - Steun Canapé",
+    "content": "Canapé vzw draait volledig op vrijwillige basis en ontvangt geen structurele subsidies. Daarom is alle steun, in welke vorm dan ook, van harte welkom. Wil je iets doneren of bijdragen? Stuur ons gerust een ",
+    "mailLink": "mailtje"
+  },
+  "about": {
+    "overCanape": "OVER CANAPE",
+    "canapeText": "Canapé is een gemeenschap gebonden kunst collectief en VZW. Met leden die stammen uit verschillende culturele achtergronden in fotografie, sociologie, textielkunst, grafisch ontwerp, goudsmeden en psychologie ontdekten we dat de kunstscene te weinig openheid en inclusiviteit biedt. Traditionele kunstruimtes voelen vaak exclusief aan, gericht op specifieke groepen en vormen van expressie. We trachten deze barrières te doorbreken door een participatieve werking te creëren waar iedereen kan bijdragen aan de kunstwereld.",
+    "missie": "Missie",
+    "missieText": "Onze missie is het bevorderen van een verwelkomende omgeving waarin mensen zich gesteund voelen om te ontdekken, creëren en verbinden door middel van kunst. Of je nu een gevestigde kunstenaar bent, een nieuwsgierige beginner of gewoon kunst waardeert, bij Canapé is er altijd een plek voor jou.",
+    "platform": "Platform",
+    "platformText": "Canapé biedt een open speelveld voor artiesten, waar ruimte is voor expressie en creatie. We streven ernaar een platform te zijn waar artiesten zichzelf kunnen presenteren, hun werken kunnen delen en waar er plaats is voor dialoog en trial and error. Bij Canapé streven we naar diepe verbindingen tussen mensen van alle achtergronden en ervaringsniveaus. We omarmen een peer-to-peer aanpak waarbij artiesten in contact komen met andere artiesten, maar ook niet- artiesten met kunst en ervaren individuen met minder ervaren artiesten. Hierbij streven we naar het hanteren van een bottom-up en feedback gestuurde werking, waarbij Villa Canapé dient als een gemeenschappelijk goed waarbij iedereen de kans krijgt om de richting waar het gebouw ingaat, mee te sturen.",
+    "conclusie": "Conclusie",
+    "conclusieText": "Concreet biedt Canapé een gratis, laagdrempelig platform en werkruimte voor (jonge) kunstenaars en collectieven van diverse achtergronden. Dit omvat open en residentiële atelierruimtes, waar kunstenaars kunnen werken en hun werk tentoonstellen of zelf evenementen en workshops kunnen organiseren.",
+    "leesMeer": "Lees je graag meer in detail over onze werking? Open dan de PDF hier!"
+  },
+  "news": {
+    "followUs": "Volg ons op Instagram!",
+    "diveInto": "Duik in ons beeldenarchief!"
+  }
+}

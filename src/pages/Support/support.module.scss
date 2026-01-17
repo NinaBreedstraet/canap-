@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Averia";
+  src: url("/Fonts/Averia_Serif_Libre/AveriaSerifLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Chalkboard";
+  src: url("/Fonts/Basteleur-Moonlight.ttf");
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: url("/Images/circle.png"), auto;
+  overflow-y: hidden;
+}
+
+.alles {
+  min-height: 90vh;
+  background-image: url("/Images/scansBoekjesWeb_12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.belangrijk {
+  font-family: "Averia";
+  font-size: 10px;
+  position: absolute;
+  top: 80%;
+}
+
+.boekje {
+  margin-top: 30px;
+  width: 60%;
+  height: 80%;
+}
+
+.Bar {
+  position: relative;
+  width: 90%;
+  height: 1vh;
+  left: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+  text-align: center;
+  color: black;
+  padding: 1vh;
+}
+
+.Bar a {
+  font-size: 10px;
+  font-family: "Averia";
+  margin-bottom: -30vh;
+  text-align: left;
+}
+
+.hamburger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 20%;
+  height: 10%;
+  top: 2vh;
+  right: 2vh;
+}
+
+/* .language .text-row {
+  font-family: "Averia", serif;
+  font-size: 10px;
+  width: 10vh;
+  margin-top: -1.5vh;
+  margin-left: 1.5vh;
+} */
+
+.text-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topper {
+  display: flex;
+  width: 105%;
+  justify-content: space-between;
+  font-family: "Chalkboard";
+  font-size: 80%;
+  margin-top: 1%;
+
+  a {
+    font-family: "Chalkboard";
+  }
+}
+
+#left {
+  text-align: center;
+  width: 50%;
+  font-family: "Chalkboard";
+}
+
+#left a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-family: "Chalkboard";
+}
+
+#right {
+  text-align: center;
+  width: 50%;
+  font-family: "Chalkboard";
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 80%;
+}
+
+.leftPage {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightPage {
+  width: 40%;
+  height: 100%;
+  a {
+    font-family: "Chalkboard";
+  }
+}
+
+.tekening {
+  position: relative;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.bloemen {
+  position: relative;
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 25%;
+}
+
+.blinkje7 {
+  position: relative;
+  width: 8%;
+  margin-left: 45%;
+  margin-top: 30%;
+}
+
+.rightPage p {
+  font-size: 80%;
+  font-family: "Chalkboard";
+}
+
+.form {
+  font-size: 13px;
+  font-family: "Chalkboard";
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 7px 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #eeeeee;
+}
+
+.hartjes {
+  width: 50%;
+  margin-left: 60px;
+  margin-top: 0;
+}
+
+.button {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 0;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: "Chalkboard";
+  position: absolute;
+  margin-top: 4vh;
+}
+
+.chat {
+  padding: 0%;
+  margin-top: 10vh;
+  font-size: 12px;
+  font-family: "Chalkboard";
+  width: 100%;
+  height: auto;
+}
+
+.chat a,
+.button a {
+  text-decoration: solid;
+  text-decoration-line: underline;
+  width: 100%;
+}
+
+.subjectText {
+  margin-top: 20px;
+  font-family: "LordSwash";
+  font-size: 16px;
+}
+
+.glitter img {
+  width: 5%;
+  margin-bottom: 10%;
+}
+
+.arrows {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 50%;
+  width: 90%;
+  left: 10vh;
+  background: transparent;
+}
+
+.arrowButton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.arrowButton a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  position: relative;
+  color: black;
+}
+
+.arrowButton:hover,
+.text:hover,
+.button:hover,
+#left a:hover,
+.language a:hover {
+  animation-name: buttons;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes buttons {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .alles {
+    background-image: url("/Images/paper.png");
+    background-size: cover;
+  }
+
+  .topper {
+    visibility: hidden;
+  }
+
+  .pages {
+    flex-direction: column-reverse;
+  }
+
+  .leftPage,
+  .rightPage {
+    width: 100%;
+  }
+
+  .leftPage {
+    visibility: hidden;
+  }
+
+  .rightPage {
+    margin-top: 80%;
+  }
+
+  .arrows {
+    visibility: hidden;
+  }
+}
+
+/* .language {
+  font-family: "Averia", serif;
+  font-size: 14px;
+  width: 10vh;
+  margin-top: -2.5vh;
+  margin-left: 1vh;
+} */
+
+.language a {
+  display: inline-block;
+}
+
+a {
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.5px;
+  position: relative;
+  color: black;
+}
