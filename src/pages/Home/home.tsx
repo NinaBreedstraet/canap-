@@ -1,6 +1,5 @@
 import styles from "./home.module.scss";
 import { useState, useEffect } from "react";
-import background from "/Images/scansBoekjesWeb_5.png";
 
 type Language = "nl" | "en" | "fr";
 
